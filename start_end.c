@@ -1,17 +1,19 @@
 #include "start_end.h"
 
-void intro(int lang){
-	int skip = 0;
+void intro(int *skip, int lang){
+	
 	
 	if(lang == 1){
-		system("cls");
-		printf("Quieres saltar la introduccion?\n");
-		printf("[1] = Si quiero");
-		printf("\t\t[2] = No quiero\n");
-		while(skip != 1 && skip != 2){
-			scanf("%d",&skip);
-			if(skip != 1 && skip != 2){
+		while(*skip != 1 && *skip != 2){
+			system("cls");
+			printf("Quieres saltar la introduccion?\n");
+			printf("[1] = Si quiero");
+			printf("\t\t[2] = No quiero\n");
+			scanf("%d",&*skip);
+			if(*skip != 1 && *skip != 2){
 				printf("Porfavor selecciona una de las opciones presentadas\n");
+				printf("*Presiona cualquier tecla para continuar*\n");
+        		system("pause > nul");
 			}
 		}
 	}else if(lang == 2){
@@ -19,15 +21,21 @@ void intro(int lang){
 		printf("Do you want to skip the introduction?\n");
 		printf("[1] = Yes");
 		printf("\t\t[2] = No\n");
-		while(skip != 1 && skip != 2){
-			scanf("%d",&skip);
-			if(skip != 1 && skip != 2){
+		while( *skip != 1 && *skip != 2){
+			system("cls");
+			printf("Do you want to skip the introduction?\n");
+			printf("[1] = Yes");
+			printf("\t\t[2] = No\n");
+			scanf("%d",&*skip);
+			if(*skip != 1 && *skip != 2){
 				printf("Please select the correct choice\n");
+				system("pause");
 			}
 		}
 	}
-	if(skip == 2 && lang == 1){
+	if(*skip == 2 && lang == 1){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
@@ -63,8 +71,9 @@ void intro(int lang){
         system("pause > nul");
 		
 	}
-	if(skip == 2 && lang == 2){
+	if(*skip == 2 && lang == 2){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
@@ -101,8 +110,8 @@ void intro(int lang){
 	
 }
 
-void tutorial(lang){
-	if(lang == 1){
+void tutorial(int skip, int lang){
+	if(lang == 1 && skip == 2){
 			system("cls");
 		    printf("\t TUTORIAL\n");
 		    printf("********************\n");
@@ -133,7 +142,7 @@ void tutorial(lang){
 		    printf("*Presiona cualquier tecla para continuar*\n");
             system("pause > nul");
             
-	}else if(lang == 2){
+	}else if(lang == 2 && skip == 2){
 			system("cls");
 			printf("********************\n");
 	        printf("Years in power [0]<--- *The time you have been in power*\n");
@@ -166,6 +175,7 @@ void tutorial(lang){
 void death_money(int *mon, int lang){
 	if(*mon <= 0 && lang == 1){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
@@ -184,13 +194,14 @@ void death_money(int *mon, int lang){
 		printf("  *********************************************|<===>* \n");
 		printf("  *********************************************| <==>* \n");
 		printf("  ***************************** ***************| <=>*  \n");
-		printf("----------------The Death------------------------------\n");
+		printf("----------------La muerte------------------------------\n");
 		printf("ESTAS MUERTO\n");
 		printf("Tu reino cayo en bancarrota, el pueblo y el ejercito destruyeron tu castillo y te condenaron a la guillotina\n");
 		printf("*Presiona cualquier tecla para continuar*\n");
         system("pause > nul");
 	}else if(*mon <= 0 && lang == 1){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
@@ -219,6 +230,7 @@ void death_money(int *mon, int lang){
 void death_army(int *army, int lang){
 	if(*army <= 0 && lang == 1){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
@@ -237,13 +249,14 @@ void death_army(int *army, int lang){
 		printf("  *********************************************|<===>* \n");
 		printf("  *********************************************| <==>* \n");
 		printf("  ***************************** ***************| <=>*  \n");
-		printf("----------------The Death------------------------------\n");
+		printf("----------------La muerte------------------------------\n");
 		printf("ESTAS MUERTO\n");
 		printf("Tu ejercito hace un golpe de estado, tu fuieste exiliado y tu muerte fue solitaria\n");
 		printf("*Presiona cualquier tecla para continuar*\n");
         system("pause > nul");
 	}else if(*army <= 0 && lang == 2){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
@@ -273,6 +286,7 @@ void death_army(int *army, int lang){
 void death_social_influence(int *people, int lang){
 	if(*people <= 0 && lang == 1){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
@@ -291,13 +305,14 @@ void death_social_influence(int *people, int lang){
 		printf("  *********************************************|<===>* \n");
 		printf("  *********************************************| <==>* \n");
 		printf("  ***************************** ***************| <=>*  \n");
-		printf("----------------The Death------------------------------\n");
+		printf("----------------La muerte------------------------------\n");
 		printf("ESTAS MUERTO\n");
 		printf("Tu ejercito hace un golpe de estado, tu fuiste exiliado y tu muerte fue solitaria\n");
 		printf("*Presiona cualquier tecla para continuar*\n");
         system("pause > nul");
 	}else if(*people <= 0 && lang == 1){
 		system("cls");
+		system("COLOR 4");
 		printf("               *********\n");
 		printf("             *************\n");
 		printf("            *****     *****\n");
