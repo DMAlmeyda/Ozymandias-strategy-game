@@ -175,7 +175,7 @@ void event03_army(int *arm,int *people,int *mon,int *y, int lang){
 
 			printf("--------Ejercito--------------\n");
 			printf("La gente esta enojada y estan provocando disturbios\n");
-			printf("[1] = 'Reprimanlos'<--- [-30 Influencia social] y [+20 ejercito]");
+			printf("[1] = 'Reprimanlos'<--- [-30 Influencia social] [+20 ejercito]");
 			printf("\t\t [2] = 'Distribuyan el oro de los Lords'<--- [-20 ejercito] [-20 Dinero]\n\n");
 	
 			while(event != 1 && event != 2){
@@ -252,8 +252,8 @@ void event01_social(int *arm,int *people,int *mon,int *y, int lang){
   			printf("\t  |_|_|I|_|_|   \n");
     		printf("--------Social--------------\n");
 			printf("Este año sacamos una gran cosecha, Que preferiria hacer?\n");
-			printf("[1] = 'Darsela al pueblo'<--- [-20 ejercito] y [+10 Influencia social]");
-			printf("\t\t [2] = 'Darsela al ejercito para proximas expediciones'<--- [+20 ejercito] y [-10 Influencia social]\n\n");
+			printf("[1] = 'Darsela al pueblo'<--- [-20 ejercito] [+10 Influencia social]");
+			printf("\t\t [2] = 'Darsela al ejercito para proximas expediciones'<--- [+20 ejercito] [-10 Influencia social]\n\n");
 	
 			while(event != 1 && event != 2){
 			scanf("%d",&event);
@@ -287,8 +287,8 @@ void event01_social(int *arm,int *people,int *mon,int *y, int lang){
   			printf("\t  |_|_|I|_|_|   \n");
     		printf("--------Social--------------\n");
 			printf("This year we have a great harvest, what would you prefer to do?\n");
-			printf("[1] = 'Give it to the people'<--- [-20 Army] y [+10 Social influence]");
-			printf("\t\t [2] = 'Give it to the army for future expeditions'<---[+20 Army] y [-10 Social influence]\n\n");
+			printf("[1] = 'Give it to the people'<--- [-20 Army] [+10 Social influence]");
+			printf("\t\t [2] = 'Give it to the army for future expeditions'<---[+20 Army] [-10 Social influence]\n\n");
 	
 			while(event != 1 && event != 2){
 			scanf("%d",&event);

@@ -4,6 +4,7 @@
 
 #include<string.h>
 #include "event.h"
+#include "start_end.h"
 
 void language(int *lan){
 	*lan = 0;
@@ -81,6 +82,13 @@ int menu(int op,int lan){
     return op;
 }
 
+void Variable_Reset(int *arm,int *people,int *mon,int *y){
+	*arm = 100;
+	*people = 100;
+	*mon = 100;
+	*y = 0;
+}
+
 main(){
 	int money = 100;
 	int social_influence = 100;
@@ -97,6 +105,8 @@ main(){
 	event = rand() % 3;
 	while(option != 0){
 		if(option == 1){
+			intro(lang);
+			tutorial(lang);
 			while(money > 0 && social_influence > 0 && army > 0){
 				
 				switch(event){
@@ -119,8 +129,12 @@ main(){
 							option = 1;
 							break;		
 				}
+				death_money( &money, lang);
+				death_army(&army,lang);
+				death_social_influence(&social_influence,lang);
 			}
 		}
+		Variable_Reset(&army,&social_influence,&money,&year);
 		option=menu(option,lang);
 	}
 	
