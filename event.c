@@ -5,6 +5,7 @@ void event01_army(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -36,11 +37,12 @@ void event01_army(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	*y = *y + 1;
+	 	
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -72,7 +74,7 @@ void event01_army(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 	*y = *y + 1;
+	 	
     	}
     }
 }
@@ -81,6 +83,7 @@ void event02_army(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -112,11 +115,12 @@ void event02_army(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	*y = *y + 1;
+	 
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -148,7 +152,7 @@ void event02_army(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 	*y = *y + 1;
+	 	
     	}
     }
 }
@@ -158,6 +162,7 @@ void event03_army(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -190,11 +195,12 @@ void event03_army(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	   
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -227,7 +233,7 @@ void event03_army(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -237,6 +243,7 @@ void event01_social(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -267,11 +274,12 @@ void event01_social(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	    
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -302,7 +310,7 @@ void event01_social(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -312,6 +320,7 @@ void event02_social(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -342,11 +351,12 @@ void event02_social(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	   
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -377,7 +387,7 @@ void event02_social(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -387,6 +397,7 @@ void event03_social(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -417,11 +428,12 @@ void event03_social(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	    
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -452,7 +464,7 @@ void event03_social(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -462,6 +474,7 @@ void event01_economy(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -494,11 +507,12 @@ void event01_economy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	    
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -531,7 +545,7 @@ void event01_economy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -541,6 +555,7 @@ void event02_economy(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -573,11 +588,12 @@ void event02_economy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	    
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -610,7 +626,7 @@ void event02_economy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -620,6 +636,7 @@ void event03_economy(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -652,11 +669,12 @@ void event03_economy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	   
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -689,7 +707,7 @@ void event03_economy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -699,6 +717,7 @@ void event01_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -735,11 +754,12 @@ void event01_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	   
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -776,7 +796,7 @@ void event01_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }
@@ -786,6 +806,7 @@ void event02_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -823,11 +844,12 @@ void event02_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	    
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -865,7 +887,7 @@ void event02_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 	
     	}
     }
 }
@@ -875,6 +897,7 @@ void event03_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 	if(*arm > 0 && *people > 0 && *mon > 0){
 			if(lang == 1){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Años en el poder[%d]\n",*y);
 	        printf("********************\n");
@@ -914,11 +937,12 @@ void event03_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t Opcion incorrecta\n");
 			}
 		}
-	 	    *y = *y + 1;
+	 	    
     	}
     
 		if(lang == 2){
 			int event = 0;
+			*y = *y + 1;
         	printf("********************\n");
 	        printf("Years in power [%d]\n",*y);
 	        printf("********************\n");
@@ -958,7 +982,7 @@ void event03_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				printf("\t That option does not exist\n");
 			}
 		}
-	 		*y = *y + 1;
+	 		
     	}
     }
 }

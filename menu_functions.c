@@ -83,3 +83,79 @@ void Variable_Reset(int *arm,int *people,int *mon,int *y){
 	*mon = 100;
 	*y = 0;
 }
+
+void score(char *v, char *v1, char *v2, char *v3, int y1, int y2, int y3, int i, int aux){
+	int max;
+	max = y1;
+	system("cls");
+	printf(" .dP'Y8  dP''b8  dP'Yb  88''Yb 888888 \n");
+    printf(" `Ybo.' dP   '' dP   Yb 88__dP 88__   \n");
+	printf(" o.`Y8b Yb      Yb   dP 88'Yb  88''   \n");
+    printf(" 8bodP'  YboodP  YbodP  88  Yb 888888 \n");
+	printf("--------------------------------------\n");
+	if( i == 0){
+		printf("Aun no se empezo a jugar");
+	}
+	if(i == 1){
+		printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+	}else if(i == 2){
+		if(max < y2){
+			printf("[2]Player [%s] = Years [%d]\n",v2,y2);
+			printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+		}else{
+			printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+			printf("[2]Player [%s] = Years [%d]\n",v2,y2);	
+		}
+		
+	}else if (i >= 3){
+		if(i > 3){
+			if(aux > y3){
+				y3 = aux;
+				strcpy(v3, v);
+			}else if(aux > y2){
+				y2 = aux;
+				strcpy(v2, v);
+			}else if(aux > y1){
+				y1 = aux;
+				strcpy(v1, v);
+			}	
+		}
+		if(max > y2 && max > y3){
+			printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+			if(y2 < y3){
+					printf("[3]Player [%s] = Years [%d]\n",v3,y3);
+					printf("[2]Player [%s] = Years [%d]\n",v2,y2);
+			}else{
+				printf("[2]Player [%s] = Years [%d]\n",v2,y2);
+				printf("[3]Player [%s] = Years [%d]\n",v3,y3);
+			}
+		}
+		if(max < y2){
+			max = y2;
+		}
+		if(max < y3){
+			printf("[3]Player [%s] = Years [%d]\n",v3,y3);
+			if(y1 < y2){
+				printf("[2]Player [%s] = Years [%d]\n",v2,y2);
+				printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+			}else{
+				printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+				printf("[2]Player [%s] = Years [%d]\n",v2,y2);
+			}
+			max = y3;
+		}
+		if(max <= y2){
+			printf("[2]Player [%s] = Years [%d]\n",v2,y2);
+			if(y1 < y3){
+				printf("[3]Player [%s] = Years [%d]\n",v3,y3);
+				printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+			}else{
+				printf("[1]Player [%s] = Years [%d]\n",v1,y1);
+				printf("[3]Player [%s] = Years [%d]\n",v3,y3);
+			}
+		}
+	
+	}
+	system("pause");
+	
+}
