@@ -159,3 +159,16 @@ void score(char *v, char *v1, char *v2, char *v3, int y1, int y2, int y3, int i,
 	system("pause");
 	
 }
+
+void community(){
+	system("cls");
+	printf("  dP""b8    dP'Yb  8b    d8 8b    d8 88   88 88b 88 88 888888 Yb  dP  \n");
+	printf(" dP   `' dP   Yb 88b  d88 88b  d88 88   88 88Yb88 88   88    YbdP  \n");
+	printf(" Yb      Yb   dP 88YbdP88 88YbdP88 Y8   8P 88 Y88 88   88     8P   \n");
+	printf("  YboodP  YbodP  88 YY 88 88 YY 88 `YbodP' 88  Y8 88   88    dP     \n\n\n");
+	printf("\t ascii images: https://www.asciiart.eu/ \n");
+	printf("\t GitHub(repository): https://github.com/DMAlmeyda/Ozymandias-strategy-game \n");
+	printf("\t GitHub(Profile): https://github.com/DMAlmeyda\n\n");
+	
+	system("pause");
+}

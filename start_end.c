@@ -169,6 +169,7 @@ void tutorial(int skip, int lang){
 			printf("------Options------- \n");
 		    
 		    system("pause");
+		    
 	}
 }
 

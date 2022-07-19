@@ -38,6 +38,7 @@ main(){
 			intro(&skip,lang);
 			system("COLOR 6");
 			tutorial(skip,lang);
+			system("cls");
 			printf("[NAME][NOMBRE] <= 5 Letters/Letras\n");
 			scanf("%s",&name);
 			size_name = strlen(name);
@@ -91,6 +92,8 @@ main(){
 			}
 		}else if(option == 2){
 			score(name,name1,name2,name3,year1,year2,year3,score_op,aux);
+		}else if(option == 3){
+			community();
 		}
 		Variable_Reset(&army,&social_influence,&money,&year);
 		system("COLOR 6");
