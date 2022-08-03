@@ -31,6 +31,7 @@ main(){
 	language(&lang);
 	system("COLOR 6");
 	option=menu(option,lang);
+	//Invoca un numero aleatorio para que cambie las opciones en el switch---Summons a random number to change the options on the switch.
 	srand(time(NULL));
 	event = rand() % 3;
 	while(option != 0){
@@ -42,13 +43,15 @@ main(){
 			printf("[NAME][NOMBRE] <= 5 Letters/Letras\n");
 			scanf("%s",&name);
 			size_name = strlen(name);
+			//Controla que se respete la cantidad de letras--- This check that the number of letters is respected
 			while(size_name > 5){
 				printf("Please try again/Intenta de nuevo\n");
 				scanf("%s",&name);
 				size_name = strlen(name);
 			}
 			while(money > 0 && social_influence > 0 && army > 0){
-				
+				//El inicio es aleatorio, ademas la variable evento cambia de valor para agregar mas cambios al volver a jugar
+				//The start is random, also the event variable changes so that the experience is different every time that you start again
 				switch(event){
 					case 0: event01_army(&army,&social_influence,&money,&year, lang);
 							event01_social(&army,&social_influence,&money,&year, lang);
@@ -72,6 +75,7 @@ main(){
 				death_money( &money, lang);
 				death_army(&army,lang);
 				death_social_influence(&social_influence,lang);
+				//Sistema de puntaje, Score System
 				if(money <= 0 || army <= 0 || social_influence <= 0){
 					score_op++;
 					switch(score_op){

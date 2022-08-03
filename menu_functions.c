@@ -1,5 +1,6 @@
 #include "menu_functions.h"
-
+//Funciones del menu 
+//Menu Functions 
 void language(int *lan){
 	*lan = 0;
 	while(*lan != 1 && *lan != 2){

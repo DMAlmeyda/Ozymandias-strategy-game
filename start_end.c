@@ -1,5 +1,6 @@
 #include "start_end.h"
-
+//Inicio, Tutorial y muertes del jugador
+//Story, Tutorial and player deaths
 void intro(int *skip, int lang){
 	
 	
@@ -57,13 +58,13 @@ void intro(int *skip, int lang){
 		printf("----------------La Muerte------------------------------\n");
 		printf("Una vez una alma antigua me dijo\n");
 		printf("Hay dos piernas en el desierto\n");
-		printf("\t De piedra y sin tronco\n");
+		printf("De piedra y sin tronco\n");
 		printf("A su lado cierto rostro yace: la faz rota\n");
-		printf("\t Su frio gesto tirano nos dice que el escultor ha podido salvar la pasion\n");
+		printf("Su frio gesto tirano nos dice que el escultor ha podido salvar la pasion\n");
 		printf("Algo ha sido escrito en el pedestal: <<Soy Ozymandias, el gran rey. ¡Mirad mi obra,poderosos!¡Desesperad!\n");
-		printf("\t La ruina es de un naufragio colosal\n");
+		printf("La ruina es de un naufragio colosal\n");
 		printf("A su lado, infinita y legendaria\n");
-		printf("\t Solo queda la arena solitaria\n");
+		printf("Solo queda la arena solitaria\n");
 		
 		printf("Yo te traje al mundo rey, y yo te voy a a sacar de el \n");
 		
@@ -95,13 +96,13 @@ void intro(int *skip, int lang){
 		printf("----------------The Death------------------------------\n");
 		printf("Once an antique soul told me\n");
 		printf("Near them, on the sand, Half sunk a shattered visage lies\n");
-		printf("\t And wrinkled lip, and sneer of cold command, Tell that its sculptor well those passions read\n");
+		printf("And wrinkled lip, and sneer of cold command, Tell that its sculptor well those passions read\n");
 		printf("On the pedestal, these words appear\n");
-		printf("\t My name is Ozymandias, King of Kings;\n");
+		printf("My name is Ozymandias, King of Kings;\n");
 		printf("Look on my Works, ye Mighty, and despair!\n");
-		printf("\t Nothing beside remains. Round the decay\n");
+		printf("Nothing beside remains. Round the decay\n");
 		printf("Of that colossal Wreck, boundless and bare\n");
-		printf("\t The lone and level sands stretch far away. \n");
+		printf("The lone and level sands stretch far away. \n");
 		
 		printf("I brought you into the world king, and I'm going to take you out of it \n");
 		

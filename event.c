@@ -1,5 +1,6 @@
 #include "event.h"
-
+//Todos los eventos del juego
+//All the events of this game
 void event01_army(int *arm,int *people,int *mon,int *y, int lang){
 	system("cls");
 	if(*arm > 0 && *people > 0 && *mon > 0){
@@ -530,7 +531,7 @@ void event01_economy(int *arm,int *people,int *mon,int *y, int lang){
     		printf("--------Economy--------------\n");
 			printf("we raise taxes my king?\n");
 			printf("[1] = 'Yes'<--- [+50 money]  [-50 Social influence] [+20 Army]\n");
-			printf("[2] = 'It's a bad time to do that''<--- [-20 Army]\n\n");
+			printf("[2] = 'It's a bad time to do that'<--- [-20 Army]\n\n");
 	
 			while(event != 1 && event != 2){
 			scanf("%d",&event);
@@ -739,7 +740,7 @@ void event01_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
     		printf("--------Diplomacia--------------\n");
 			printf("Una princesa de un reino cercano quiere casarse contigo, aceptas?\n");
 			printf("[1] = 'Si, sin dudar'<--- [+20 dinero]\n");
-			printf("[2] = 'No prefiero estar solo '<--- [-10 Influencia social] \n\n");
+			printf("[2] = 'No prefiero estar solo '<--- [+10 Influencia social] \n\n");
 	
 			while(event != 1 && event != 2){
 			scanf("%d",&event);
@@ -749,7 +750,7 @@ void event01_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				
 	    	}else if(event == 2){
 	    		
-	    		*people = *people - 10;
+	    		*people = *people + 10;
 			}else{
 				printf("\t Opcion incorrecta\n");
 			}
@@ -781,7 +782,7 @@ void event01_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
     		printf("--------Diplomacy--------------\n");
 			printf("A princess from a nearby kingdom wants to marry you, do you agree?\n");
 			printf("[1] = 'Yes, let's do it''<--- [+20 Money]\n ");
-			printf("[2] = 'I prefer to be alone'<--- [-10 Social influence] \n\n");
+			printf("[2] = 'I prefer to be alone'<--- [+10 Social influence] \n\n");
 	
 			while(event != 1 && event != 2){
 			scanf("%d",&event);
@@ -791,7 +792,7 @@ void event01_diplomacy(int *arm,int *people,int *mon,int *y, int lang){
 				
 	    	}else if(event == 2){
 	    		
-	    		*people = *people - 10;
+	    		*people = *people + 10;
 			}else{
 				printf("\t That option does not exist\n");
 			}
